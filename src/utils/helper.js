@@ -1,3 +1,5 @@
+import { nameList } from "./data";
+
 export function formatViews(views) {
   if (views < 1000) return views.toString();
   if (views < 1_000_000) return (views / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
@@ -27,7 +29,7 @@ export function timeAgo(dateString) {
   return `${years} year${years !== 1 ? "s" : ""} ago`;
 };
 
-function makeid(length) {
+export function generateRandomString(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     var charactersLength = characters.length;
@@ -37,3 +39,9 @@ function makeid(length) {
     return result;
 }
 
+export function generateName() {
+  // The function doesn't need to "return" anything. It just needs
+  // to set the value of the text field to the random name.
+  let result = nameList[Math.floor( Math.random() * nameList.length )];
+  return result;
+};

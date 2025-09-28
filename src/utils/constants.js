@@ -3,3 +3,5 @@ export const YOUTUBE_VIDEO_API = "https://youtube.googleapis.com/youtube/v3/vide
 export const YOUTUBE_SEARCH_API = "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
 export const templateList = ['All', 'Kokan', 'Music', 'Mixes', 'MotoVlog', 'Cooking', 'Development', 'Coding', 'Travel', 'Mobile', 'Laptops']
+
+export const LIVE_CHAT_COUNT = 25;

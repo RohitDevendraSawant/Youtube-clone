@@ -13,12 +13,11 @@ const Watch = () => {
   });
 
   return (
-    <div className="m-5">
-      <div className="flex">
-        <div>
+    <div className="m-1 w-full">
+      <div className="flex w-full h-[70vh]">
+        <div className="flex-[2]">
           <iframe
-            width="900"
-            height="450"
+            className="h-full w-full rounded-lg"
             src={"https://www.youtube.com/embed/" + searchParams.get("v")}
             title="YouTube video player"
             frameBorder="0"
@@ -27,7 +26,7 @@ const Watch = () => {
             allowFullScreen
           ></iframe>
         </div>
-        <div><LiveChatContainer /></div>
+        <div className="flex-[1] ml-1"><LiveChatContainer /></div>
       </div>
       <div className="">
         <CommentsContainer />
